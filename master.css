@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+}
+.container{
+    margin: 0 7rem;
+    height: 100%;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+#home{
+    height: 100vh;
+    background: #0162be;
+    color:#fff;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+nav .logo{
+    width: 50px;
+}
+nav ul {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+nav ul a{
+    padding: 20px;
+    color:antiquewhite;
+    transition: 1s;
+    border-radius: 20px;
+    
+}
+nav ul a:hover{
+    transform: scale(1.1);
+    background-color: rgb(45, 82, 152);
+    color: rgb(207, 207, 211);
+}
+#home container .contact{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#home .content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+#home .content img{
+    width:220px;
+    animation: animation1 1s ease-out;
+}
+#home .content .content-text h1{
+    font-size:40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+#home .content .content-text h1 span{
+    font-size: 70px;   
+}
+#home .content .content-text p{
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.4;
+    width: 60%
+}
+.btn{
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #fff;
+    border-radius: 30px;
+    color: black;
+    transition: all 1s;
+}
+.btn:hover{
+    background: transparent;
+    color:#fff;
+    border: 1px solid#fff;
+}
+.social{
+    margin-left: 3rem;
+    animation: animation1 1s ease-out;
+}
+.social i{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+}
+.pepsi-types{
+    width: 130px;
+    display: block;
+    margin: auto;
+    animation: animation2 1s ease-out;
+}
+@keyframes animation1 {
+    0% {
+        transform: translatex(500px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes animation2 {
+    0% {
+        transform: translateY(200px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
+/* Tablet */
+@media (max-width: 900px)  {
+
+}
